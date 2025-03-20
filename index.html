@@ -11,7 +11,9 @@
     <h1 id="title">Survey Form</h1>
     <p id="description"> Fill out this form or else...</p>
 
+
     <form id="survey-form">
+
       <label for="name" id="name-label">
         Name
         <input
@@ -21,6 +23,7 @@
           placeholder="Enter your Name"
         />
       </label>
+
       <label for="email" id="email-label">
         Email
         <input
@@ -30,6 +33,7 @@
           placeholder="Enter your Email"
         />
       </label>
+
       <label for="number" id="number-label">
         Age
         <input
@@ -38,6 +42,7 @@
           placeholder="Enter your Age"
         />
       </label>
+
       <label for="dropdown">
         Would you rather :
         <select id="dropdown" required>
@@ -45,9 +50,28 @@
         <option value="history"> Have everyone you know to access your internet history</option>
         <option value="tought"> Have everyone you meet to be able to read your toughts</option>
       </label>
+
       <div class="radio-group">
         <p>Would you like it if we spamed you with useless emails ?</p>
         <label>
+          <input
+            name="spam"
+            type="radio"
+            value="yes"
+            Yes, please do !
+          />
+        </label>
+        <label>
+          <input
+            name="spam"
+            type="radio"
+            value="No"
+            No, but I accept that you do
+          />
+        </label>
+      </div>
+      <div class="checkbox-group">
+        <label></label>
       </div>
     </form>
   </body>
