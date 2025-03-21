@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <h1 id="title">Survey Form</h1>
+    <h1 id="title">Very Important Survey Form</h1>
     <p id="description">Fill out this form or else...</p>
 
     <form id="survey-form">
@@ -55,32 +55,58 @@
           </select></label
         >
 
-        <div class="radio-group">
+        <section class="radio-group">
           Would you like it if we spamed you with useless emails ?
           <label
-            ><input checked name="spam" type="radio" value="yes" />Yes, please
-            do !
+            ><input
+              checked
+              name="spam"
+              class="inline"
+              type="radio"
+              value="yes"
+            />Yes, please do !
           </label>
           <label
-            ><input name="spam" type="radio" value="No" />No, but I accept that
-            you do
+            ><input name="spam" class="inline" type="radio" value="No" />No, but
+            I accept that you do
           </label>
-        </div>
+        </section>
 
-        <div class="checkbox-group">
-          <label
-            >How do you feel about this form so far ? (check all that apply)
-            <input name="feel" value="puzzled" type="checkbox" />puzzled
-            <input name="feel" value="amused" type="checkbox" />amused
-            <input name="feel" value="angry" type="checkbox" />angry
+        <section class="checkbox-group">
+          How do you feel about this form so far ? (check all that apply)
+          <label>
+            <input
+              name="feel"
+              class="inline"
+              value="puzzled"
+              type="checkbox"
+            />puzzled
+            <input
+              name="feel"
+              class="inline"
+              value="amused"
+              type="checkbox"
+            />amused
+            <input
+              name="feel"
+              class="inline"
+              value="angry"
+              type="checkbox"
+            />angry
           </label>
-        </div>
+        </section>
 
-        <label for="textarea">Elaborate :
-          <textarea id="textarea"></textarea></label>
+        <label for="textarea"
+          >Elaborate :
+          <textarea
+            id="textarea"
+            rows="15"
+            placeholder="Express your feelings here..."
+          ></textarea>
+        </label>
       </fieldset>
 
-      <button id="submit" type="submit">Submit</button>
+      <button id="submit" type="submit" value="submit">Submit</button>
     </form>
   </body>
 </html>
